@@ -1,5 +1,5 @@
 #include<iostream>
-
+#include<stdio.h>
 
 using namespace std;
 
@@ -38,4 +38,10 @@ int main(){
     }else{
         cout<<"pa!=pb"<<endl;
     }
+
+    char *p="you are a girl";
+    char **ptr=&p;
+    printf("%c,",**ptr);
+    ptr++;
+    printf("%c\n",**ptr);
 }

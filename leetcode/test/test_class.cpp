@@ -34,7 +34,8 @@ int main(){
     A* a=&b;
     cout<<"A:"<<sizeof(a)<<endl;
     a->func();
-    // show(a);
+    A a1;
+    show(a1);
     return 0;
 }
 

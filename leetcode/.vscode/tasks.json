@@ -9,9 +9,9 @@
             "command": "g++",    //编译命令
             "args": [    //编译参数列表
                 "-g", // 加上-g可以断点调试
-                "wind/1.cpp",
+                "test/test_ptr.cpp",
                 "-o",
-                "wind/main",
+                "test/main",
                 "--std=c++11"
             ]
         }
