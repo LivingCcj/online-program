@@ -5,7 +5,7 @@ using namespace std;
 
 bool hasCycle(ListNode *head) {
         ListNode *next1=head->next;
-        while(head!=nullptr && next1->next !=nullptr && next1!=nullptr){
+        while(head!=nullptr && next1!=nullptr && next1->next !=nullptr ){
             if(head==next1) {
                 cout<<head->val<<endl;
                 return true;
@@ -15,6 +15,27 @@ bool hasCycle(ListNode *head) {
         }
         return false;
     }
+//找到相交的点
+ListNode* CycleAt(ListNode * head){
+    ListNode *low=head;
+    ListNode *fast=head;
+
+    while(low!=nullptr && fast !=nullptr && fast->next !=nullptr){
+        low=low->next;
+        fast = fast->next->next;
+        if(low == fast){
+            break;
+        }
+    }
+    if(fast !=nullptr && low != nullptr){
+        ListNode *tmp=head;
+        while(tmp!=fast){
+            tmp = tmp->next;
+            fast = fast->next;
+        }
+    }
+    return fast;
+}
 int main(){
 
     ListNode* v1=new ListNode(1);
@@ -30,4 +51,6 @@ int main(){
     v5->next=v6;
     v6->next=v3;
     cout<<hasCycle(v1)<<endl;
+    ListNode * node=CycleAt(v1);
+    cout<<node->val<<endl;
 }

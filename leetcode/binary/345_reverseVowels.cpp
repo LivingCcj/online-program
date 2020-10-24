@@ -22,7 +22,6 @@ string reverseVowels(string s) {
         }else{
 
             while(!isornot(str[first])){
-
                 first++;
                 if(first>last) break;
             }

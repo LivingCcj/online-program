@@ -20,6 +20,7 @@ int partition(vector<int> &a, int l, int r)
     swap(a,l, i);
     return i;
 }
+
 int quickSort(vector<int> &a, int l, int r, int K)
 {
 

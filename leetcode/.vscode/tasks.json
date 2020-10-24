@@ -9,10 +9,11 @@
             "command": "g++",    //编译命令
             "args": [    //编译参数列表
                 "-g", // 加上-g可以断点调试
-                "test/test_ptr.cpp",
+                "sort/quickSort.cpp",
                 "-o",
-                "test/main",
-                "--std=c++11"
+                "sort/main",
+                "--std=c++11",
+                // "-I./tree/"
             ]
         }
     ]
