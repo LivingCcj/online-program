@@ -1,9 +1,16 @@
+/*
+ * @Description: 
+ * @Author: ccj
+ * @Date: 2020-12-12 16:26:25
+ * @LastEditTime: 2020-12-12 16:26:25
+ * @LastEditors:  
+ */
 #include<iostream>
 
 using namespace std;
 
 //题目地址：https://www.acwing.com/problem/content/description/789/
-
+// 两个序列的双指针算法
 
 const int N = 100010;
 int p[N],tmp[N];

@@ -6,7 +6,7 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "base/merge_sort.cpp",
+                "base/sub_matrix.cpp",
                 "-o",
                 "base/main",
                 "--std=c++11"

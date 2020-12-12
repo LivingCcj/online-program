@@ -11,7 +11,7 @@
 
 using namespace std;
 
-const int N =1e4+10;
+const int N =1e3+10;
 
 int a[N][N],s[N][N];
 
@@ -27,7 +27,7 @@ int main(){
     
     while(k--){
         int x1,x2,y1,y2;
-        scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
+        cin>>x1>>y1>>x2>>y2;
         //子矩阵之和
         int sum=s[x2][y2]-s[x1-1][y2]-s[x2][y1-1]+s[x1-1][y1-1];
         printf("%d\n",sum);

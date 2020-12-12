@@ -3,7 +3,7 @@
 using namespace std;
 
 //题目地址：https://www.acwing.com/problem/content/790/
-
+//逆序数
 const int N = 100010;
 typedef long long LL;
 int p[N],tmp[N];

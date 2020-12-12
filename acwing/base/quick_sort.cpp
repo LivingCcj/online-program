@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: ccj
+ * @Date: 2020-12-12 16:27:52
+ * @LastEditTime: 2020-12-12 16:27:52
+ * @LastEditors:  
+ */
 #include<iostream>
 
 using namespace std;
@@ -5,7 +12,7 @@ const int N = 100010;
 int q[N];
 
 //地址：https://www.acwing.com/problem/content/787/
-//快排
+//快排，双指针算法
 
 //注意边界条件
 void quick_sort(int q[], int l, int r){
