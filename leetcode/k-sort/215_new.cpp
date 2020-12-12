@@ -52,7 +52,7 @@ int partialSort(vector<int>& data,int l,int r,int index){
     }else{
         return partialSort(data,l,cur-1,index);
     }
-}
+} 
 
 int findKthLargest_quick(vector<int>& nums, int k) {
     int len=nums.size();
@@ -63,4 +63,4 @@ int findKthLargest_quick(vector<int>& nums, int k) {
 int main(){
     vector<int> vec{3,5,1,5,3,10,8};
     cout<<findKthLargest_quick(vec,5)<<endl;
-}
+} 

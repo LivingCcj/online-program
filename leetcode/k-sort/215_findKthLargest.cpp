@@ -59,6 +59,23 @@ int findKthLargest_quick(vector<int>& nums, int k) {
     return partialSort(nums,0,len-1,minK);
 }
 
+
+//简单版
+
+int quick_sort(vector<int> &data,int l,int r,int index){
+    if (l>=r) return data[index];
+    int x=data[l];
+    int i=l-1,j=r+1;
+    while(1){
+        while(data[++i]<x);
+        while(data[--j]>x);
+        if(i>=j) break;
+        swap(p[i],p[j]);
+    }
+    if(index<=j) return quick_sort(data,l,j,index);
+    else return quick_sort(data,j+1,r,index);
+}
+
 int main(){
     vector<int> vec={3,5,1,5,3,10,8};
     cout<<findKthLargest_quick(vec,3)<<endl;

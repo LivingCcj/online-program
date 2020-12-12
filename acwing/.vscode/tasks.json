@@ -6,9 +6,9 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "datastruct/2_union.cpp",
+                "base/merge_sort.cpp",
                 "-o",
-                "datastruct/main",
+                "base/main",
                 "--std=c++11"
             ],
             "options": {
