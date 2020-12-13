@@ -1,7 +1,7 @@
 #include<iostream>
 
 //地址：https://www.acwing.com/problem/content/788/
-
+//双指针算法
 using namespace std;
 
 const int N = 100010;

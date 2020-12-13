@@ -6,9 +6,9 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "base/sub_matrix.cpp",
+                "datastruct/trim.cpp",
                 "-o",
-                "base/main",
+                "datastruct/main",
                 "--std=c++11"
             ],
             "options": {
