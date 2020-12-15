@@ -47,12 +47,12 @@ void dfs2(int u){
 }
 int main(){
     cin >>n;
-    // vector<int> data(n+1);
-    // for(int i=1;i<=n;i++){
-    //     data[i]=i;
-    // }
+    vector<int> data(n+1);
+    for(int i=1;i<=n;i++){
+        data[i]=i;
+    }
 
-    dfs2(0);
-
+    dfs(data,1);
+    return 0;
     
 }

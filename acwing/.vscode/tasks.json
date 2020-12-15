@@ -6,9 +6,9 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "datastruct/trim.cpp",
+                "search_picture/permutation.cpp",
                 "-o",
-                "datastruct/main",
+                "search_picture/main",
                 "--std=c++11"
             ],
             "options": {

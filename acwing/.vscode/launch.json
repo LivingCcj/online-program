@@ -8,7 +8,7 @@
             "name": "g++ - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/../datastruct/main",
+            "program": "${fileDirname}/../search_picture/main",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
