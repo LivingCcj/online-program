@@ -1,10 +1,15 @@
+/*
+ * @Description: 数的存在的范围，有序数据
+ * 题目地址:https://www.acwing.com/problem/content/791/
+ * @Author: ccj
+ * @Date: 2020-12-15 14:53:24
+ * @LastEditTime: 2020-12-15 14:53:43
+ * @LastEditors:  
+ */
 #include<iostream>
 
 
 
-//题目地址:https://www.acwing.com/problem/content/791/
-
-//数的存在的范围，有序数据
 using namespace std;
 const int N =100010;
 
@@ -12,6 +17,8 @@ int n,q,p[N];
 
 void range_num(int q){
     int i=0,j=n-1;
+
+    //查找下限
     while(i<j){
         int mid=i+j>>1;
         if(p[mid]>=q) j=mid;
@@ -23,6 +30,7 @@ void range_num(int q){
     }
     int l=0;
     int r=n-1;
+    //查找上限
     while (l<r)
     {
         int mid=l+r+1>>1;
