@@ -1,5 +1,5 @@
 /*
- * @Description: 最长不同连续自序列；https://www.acwing.com/problem/content/801/
+ * @Description: 最长不同连续子序列；https://www.acwing.com/problem/content/801/
  * 
  * 属于双指针算法 
  * 核心是 找单调性
@@ -9,7 +9,7 @@
  * }
  * @Author: ccj
  * @Date: 2020-12-12 16:21:45
- * @LastEditTime: 2020-12-12 16:55:30
+ * @LastEditTime: 2020-12-16 14:28:50
  * @LastEditors:  
  */
 

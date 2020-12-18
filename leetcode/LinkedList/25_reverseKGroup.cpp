@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: ccj
+ * @Date: 2020-12-16 15:06:41
+ * @LastEditTime: 2020-12-16 15:47:52
+ * @LastEditors:  
+ */
 #include<iostream>
 #include<node.h>
 
@@ -15,6 +22,31 @@ ListNode* reverseKGroup(ListNode* head, int k) {
     }
     tNode->next=head;
     return newNode->next;
+}
+
+
+ListNode* reverseKGroup1(ListNode * head,int k){
+    ListNode* l=head;
+    ListNode* r= head;
+
+    for(int i=0;i<k;i++){
+        if(r){
+            r=r->next;
+        }else{
+            return l;
+        }
+    }
+
+    ListNode* pre=r;
+    ListNode* phead=l;
+    while(l!=r){
+        ListNode * tmp=l->next;
+        l->next=pre;
+        pre=l;
+        l=tmp;
+    }
+    phead->next=reverseKGroup1(l,k);
+    return pre;
 }
 
 
@@ -57,7 +89,7 @@ int main(){
     v3->next=v4;
     v4->next=v5;
     v5->next=v6;
-    ListNode *tmp=reverseKGroup(v1,8);
+    ListNode *tmp=reverseKGroup1(v1,2);
     while(tmp){
         cout<<tmp->val<<endl;
         tmp=tmp->next;

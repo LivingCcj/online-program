@@ -1,11 +1,11 @@
 /*
- * @Description:  两个数组的单调性：https://www.acwing.com/problem/content/802/
+ * @Description:  两个数组的和的组合：https://www.acwing.com/problem/content/802/
 核心问题：
 找到双指针的单调性
 时间复杂度：O（m+n）
  * @Author: ccj
  * @Date: 2020-12-12 17:03:53
- * @LastEditTime: 2020-12-12 17:04:57
+ * @LastEditTime: 2020-12-16 14:41:56
  * @LastEditors:  
  */
 

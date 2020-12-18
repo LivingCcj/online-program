@@ -1,9 +1,9 @@
 /*
- * @Description: 数的存在的范围，有序数据
+ * @Description: 数的存在的范围，有序数列
  * 题目地址:https://www.acwing.com/problem/content/791/
  * @Author: ccj
  * @Date: 2020-12-15 14:53:24
- * @LastEditTime: 2020-12-15 14:53:43
+ * @LastEditTime: 2020-12-16 14:37:50
  * @LastEditors:  
  */
 #include<iostream>
